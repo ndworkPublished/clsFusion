@@ -1,6 +1,7 @@
 
 function fused = hsiFusion( colorImg, monoImg )
   % fused = ihsFusion( colorImg, monoImg )
+  %
   % performs the fast IHS fusion algorithm of "A New Intensity-Hue-Saturation 
   %   Fusion Approach to Image Fusion With a Tradeoff Parameter" by Choi,
   %   2006

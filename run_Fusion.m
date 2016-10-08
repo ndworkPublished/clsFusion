@@ -1,3 +1,10 @@
+% Written by Nicholas Dwork - Copyright 2016
+%
+% This software is offered under the GNU General Public License 3.0.  It
+% is offered without any warranty expressed or implied, including the
+% implied warranties of merchantability or fitness for a particular
+% purpose.
+
 
 function run_Fusion
   close all; clear; rng(1);
@@ -10,11 +17,11 @@ function run_Fusion
   [colorImg,monochromeImg] = loadData( dataDir, datacase );
 
   tic
-  %fused = alphaBlend( colorImg, monochromeImg );
+  fused = alphaBlend( colorImg, monochromeImg );
   %fused = hsiFusion( colorImg, monochromeImg );
   %fused = wavFusion( colorImg, monochromeImg );
   %fused = hsiWavFusion( colorImg, monochromeImg );
-  fused = clsFusion( colorImg, monochromeImg, 'gamma', gamma );
+  %fused = clsFusion( colorImg, monochromeImg, 'gamma', gamma );
   timeTaken = toc;
   disp(['Time taken: ', num2str(timeTaken), ' (s)']);
 
